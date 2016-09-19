@@ -1,0 +1,9 @@
+Exception: STATUS_INTEGER_DIVIDE_BY_ZERO at eip=0040125F
+eax=00000009 ebx=0028CCAC ecx=00000000 edx=00000000 esi=613289D3 edi=611E7F32
+ebp=0028CC88 esp=0028CC60 program=C:\Users\Cody\Desktop\CSC5 Work\csc5\Savitch_9thEd_Ch1_PracProg3_Run-timeError\dist\Debug\Cygwin-Windows\savitch_9thed_ch1_pracprog3_run-timeerror.exe, pid 4912, thread main
+cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
+Stack trace:
+Frame     Function  Args
+0028CC88  0040125F (00000001, 0028CCAC, 80010100, 61007D35)
+0028CD28  61007D9A (00000000, 0028CD84, 61006DC0, 00000000)
+End of stack trace
