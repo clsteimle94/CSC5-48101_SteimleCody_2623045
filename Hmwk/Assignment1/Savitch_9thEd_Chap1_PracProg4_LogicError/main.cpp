@@ -24,21 +24,21 @@ int main( )
 	//Set values
 	cout << "Press return after entering a number.\n";
 	cout << "Enter the number of pods:\n";
-	cin >> numpods;
+	cin >> numpods;  //User inputs the number of pods
 	cout << "Enter the number of peas in a pod:\n";
-	cin >> pperpod;
+	cin >> pperpod;  //User inputs the number of peas in a pod
 	
 	//Process values -> Map inputs to outputs
 	ttlpeas = numpods + pperpod; //Adding here makes the output false.
 	
 	//Display Output
-	cout << "if you have ";
+	cout << "if you have \n";
 	cout << numpods;
 	cout << " pea pods\n";
 	cout << "and ";
 	cout << pperpod;
 	cout << " peas in each pod, then\n";
-	cout << "you have ";
+	cout << "you have \n";
 	cout << ttlpeas;
 	cout << " peas in all the pods.\n";
 	

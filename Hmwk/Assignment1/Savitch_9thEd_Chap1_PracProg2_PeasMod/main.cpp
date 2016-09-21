@@ -2,12 +2,12 @@
  File:   main.cpp
    Author: Cody Steimle
    Created on September 11, 2016, 10:20 PM
-   Purpose: Counting the number of peas
+   Purpose: Modify sample code 1.8 to add a greeting and farewell
  */
 
 //System Libraries
 #include <iostream> //Input/output objects
-using namespace std; //Namespace used in the System Library
+using namespace std; //Name-space used in the System Library
 
 //User Libraries
 
@@ -22,26 +22,26 @@ int main( )
 	int numpods, pperpod, ttlpeas; //number of pods, peas per pod, total peas
 	
         //Greeting
-        cout << "Hello.\n";
+        cout << "Hello. This program will calculate the total amount of peas.\n";
         
 	//Set values
 	cout << "Press return after entering a number.\n";
 	cout << "Enter the number of pods:\n";
-	cin >> numpods;
+	cin >> numpods;  //User inputs the number of pods
 	cout << "Enter the number of peas in a pod:\n";
-	cin >> pperpod;
+	cin >> pperpod;  //User inputs the number of peas in a pod
 	
 	//Process values -> Map inputs to outputs
 	ttlpeas = numpods * pperpod;
 	
 	//Display Output
-	cout << "if you have ";
+	cout << "if you have \n";
 	cout << numpods;
 	cout << " pea pods\n";
-	cout << "and ";
+	cout << "and \n";
 	cout << pperpod;
 	cout << " peas in each pod, then\n";
-	cout << "you have ";
+	cout << "you have \n";
 	cout << ttlpeas;
 	cout << " peas in all the pods.\n";
         

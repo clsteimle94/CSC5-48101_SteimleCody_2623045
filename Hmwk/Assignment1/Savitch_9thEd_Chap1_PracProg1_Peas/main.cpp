@@ -2,12 +2,12 @@
  File:   main.cpp
    Author: Cody Steimle
    Created on September 11, 2016, 9:32 PM
-   Purpose: Savitch 1.8 Sample Program - Peas
+   Purpose: Savitch 1.8 Sample Program - Calculating the number of peas
  */
 
 //System Libraries
-#include <iostream> //Input/output objects
-using namespace std; //Namespace used in the System Library
+#include <iostream>  //Input/output objects
+using namespace std; //Name-space used in the System Library
 
 //User Libraries
 
@@ -24,21 +24,21 @@ int main( )
 	//Set values
 	cout << "Press return after entering a number.\n";
 	cout << "Enter the number of pods:\n";
-	cin >> numpods;
+	cin >> numpods;  //User inputs number of pods
 	cout << "Enter the number of peas in a pod:\n";
-	cin >> pperpod;
+	cin >> pperpod;  //User inputs the number of peas in a pod
 	
 	//Process values -> Map inputs to outputs
 	ttlpeas = numpods * pperpod;
 	
 	//Display Output
-	cout << "if you have ";
+	cout << "if you have \n";
 	cout << numpods;
 	cout << " pea pods\n";
-	cout << "and ";
+	cout << "and \n";
 	cout << pperpod;
 	cout << " peas in each pod, then\n";
-	cout << "you have ";
+	cout << "you have \n";
 	cout << ttlpeas;
 	cout << " peas in all the pods.\n";
 	

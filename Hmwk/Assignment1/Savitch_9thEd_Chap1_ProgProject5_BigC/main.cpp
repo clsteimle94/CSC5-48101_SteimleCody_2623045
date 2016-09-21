@@ -6,7 +6,7 @@
  */
 
 //System Libraries
-#include <iostream>
+#include <iostream>  //Input/output objects
 using namespace std; //Name-Space used in the system library
 
 //User Libraries
@@ -18,12 +18,12 @@ using namespace std; //Name-Space used in the system library
 //Execution Begins Here!
 int main(int argc, char** argv) {
     //Declaration of Variables
-    char s=' ';//The space character
-    char c;    //Character used to create the Big C
+    char s=' '; //The space character
+    char c;     //Character used to create the Big C
     
    //Input values
     cout<<"What character would you like to use to make a Big C, input\n";
-    cin>>c;
+    cin>>c; //User input the character used to make the Big C
     
    //Process values -> Map inputs to Outputs
     

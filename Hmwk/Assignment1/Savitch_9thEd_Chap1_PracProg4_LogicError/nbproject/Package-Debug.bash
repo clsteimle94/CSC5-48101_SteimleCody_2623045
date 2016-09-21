@@ -13,9 +13,9 @@ CND_BUILDDIR=build
 CND_DLIB_EXT=dll
 NBTMPDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/savitch_9thed_ch1_pracprog4_logicerror
-OUTPUT_BASENAME=savitch_9thed_ch1_pracprog4_logicerror
-PACKAGE_TOP_DIR=savitch9thedch1pracprog4logicerror/
+OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/savitch_9thed_chap1_pracprog4_logicerror
+OUTPUT_BASENAME=savitch_9thed_chap1_pracprog4_logicerror
+PACKAGE_TOP_DIR=savitch9thedchap1pracprog4logicerror/
 
 # Functions
 function checkReturnCode
@@ -60,15 +60,15 @@ mkdir -p ${NBTMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory "${NBTMPDIR}/savitch9thedch1pracprog4logicerror/bin"
+makeDirectory "${NBTMPDIR}/savitch9thedchap1pracprog4logicerror/bin"
 copyFileToTmpDir "${OUTPUT_PATH}.exe" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/savitch9thedch1pracprog4logicerror.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/savitch9thedchap1pracprog4logicerror.tar
 cd ${NBTMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/savitch9thedch1pracprog4logicerror.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/savitch9thedchap1pracprog4logicerror.tar *
 checkReturnCode
 
 # Cleanup

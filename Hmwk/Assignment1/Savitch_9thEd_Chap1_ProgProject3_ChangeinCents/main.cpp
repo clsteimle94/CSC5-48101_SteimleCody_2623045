@@ -1,4 +1,4 @@
-/* 
+ /* 
    File:   main.cpp
    Author: Cody Steimle
    Created on September 18, 2016, 10:41 PM
@@ -7,7 +7,7 @@
 
 //System Libraries
 #include <iostream>  //Input/output objects
-using namespace std; //Namespace used in the System Library
+using namespace std; //Name-space used in the System Library
 
 //User Libraries
 
@@ -19,24 +19,22 @@ using namespace std; //Namespace used in the System Library
 int main(int argc, char** argv) {
     
     //Declaration of Variables
-    short quart,dimes,nickl,cents;
+    short quart,dimes,nickl,tcents;   //Number of Quarters, Number of Dimes, Number of Nickels, Total Cents
     
-    //Set values
-    quart=quart*25;
-    dimes=dimes*10;
-    nickl=nickl*5;
-    cents=quart+dimes+nickl;
+    //Input or initialize values Here
+    cout<<"This program will convert coin amounts into a grand total of cents."<<endl;
+    cout<<"Enter the number of quarters:"<<endl;
+    cin>>quart;  //User sets the number of quarters
+    cout<<"Enter the number of dimes:"<<endl;
+    cin>>dimes;  //User sets the number of dimes
+    cout<<"Enter the number of nickels:"<<endl;    
+    cin>>nickl;  //User sets the number of nickels     
     
     //Process values -> Map inputs to outputs
-    cout<<"Enter the number of quarters"<<endl;
-    cin>>quart;
-    cout<<"Enter the number of dimes"<<endl;
-    cin>>dimes;
-    cout<<"Enter the number of nickels"<<endl;    
-    cin>>nickl;       
+    tcents=(quart*25)+(dimes*10)+(nickl*5); //Adds the total value of each coin together  
             
     //Display Output
-    cout<<"The amount of money is "<<cents<<"cents"<<endl;
+    cout<<"The total amount of money is: "<<tcents<<" cents"<<endl;
     
     //Exit Program
     return 0;

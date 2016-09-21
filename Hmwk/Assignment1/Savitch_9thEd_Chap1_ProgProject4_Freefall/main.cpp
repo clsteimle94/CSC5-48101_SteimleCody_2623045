@@ -6,15 +6,14 @@
  */
 
 //System Libraries Here
-#include <iostream>
-#include <cmath> //Math Library
-using namespace std;
+#include <iostream>  //Input/output objects
+#include <cmath>     //Math Library
+using namespace std; //Name-space used in the System Library
 
 //User Libraries Here
 
 //Global Constants Only, No Global Variables
 const float GRAVITY=32.174; //Acceleration in ft/sec^2
-//Like PI, e, Gravity, or conversions
 
 //Function Prototypes Here
 
@@ -28,15 +27,15 @@ int main(int argc, char** argv) {
     //Input or initialize values Here
     cout<<"This problem determines distance dropped in free-fall"<<endl;
     cout<<"Input the time in free fall, units of seconds"<<endl;
-    cin>>time;
+    cin>>time;   //User inputs the free fall time
     cout<<"How many decimal places to round the result"<<endl;
-    cin>>places;
+    cin>>places; //User decides number accuracy
     
     //Process/Calculations Here
     disFell=GRAVITY*time*time/2; 
-    float shift=pow(10,places); //Number of places to shift
+    float shift=pow(10,places);   //Number of places to shift
     int round1=disFell*shift+0.5; //Round to the nearest 10th
-    disFell=round1/shift;
+    disFell=round1/shift;         //Then shift result back
       
     //Output Located Here
     cout<<"Gravity = "<<GRAVITY<<" ft/sec^2"<<endl;
