@@ -20,18 +20,27 @@ int main(int argc, char** argv) {
     //Declaration of Variables
     int numb;
     
-    //Process values -> Map inputs to Outputs
+    //Process values -> Display
     numb=3;
-    while (numb<=100)
-    {               
-        if (numb/(2)==1){    
-        numb=numb+1;  
-        }
-        else { cout<<numb<<endl; 
-        numb=numb+1;
+    while (numb<=9){
+        if (numb%2==0){    
+            numb++;  
+	}
+        else {
+            cout<<numb<<endl; 
+            numb++;
         }
     }
-    //Display Output  
+    while (numb<=100){               
+        if (numb%2==0 || numb%3==0 || numb%5==0 || numb%7==0 || numb%9==0){    
+            numb++;  
+	}
+        else{
+            cout<<numb<<endl; 
+            numb++;
+        }
+    }
+    cout<<"These are the prime numbers from 3 to 100."<<endl;
     
     //Exit Program
     return 0;
