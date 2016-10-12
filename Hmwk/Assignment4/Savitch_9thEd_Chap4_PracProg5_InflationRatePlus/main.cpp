@@ -30,7 +30,7 @@ int main(int argc, char** argv) {
     cout<<"Please enter the price of a large drink a year ago:"<<endl;
     cin>>pricago;
     
-    //Input/Process values 
+    //Input Validation
     if(pricnow<=0||pricago<=0){
         cout<<"Enter a postive number."<<endl;
         return 1;//Return failure

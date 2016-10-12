@@ -2,7 +2,7 @@
    File:   main
    Author: Cody Steimle
    Created on October 11th, 2016, 5:25 PM
-   Purpose:  Chose how many bottles of beer are on the wall
+   Purpose:  Choose how many bottles of beer are on the wall
  */
 
 //System Libraries
@@ -18,7 +18,7 @@ using namespace std;  //Name-space used in the System Library
 //Execution Begins Here!
 int main(int argc, char** argv) {
     //Declaration of Variables
-    char ans;           //answer for looping
+    char ans;     //answer for looping
     int bttlcnt;  //bottle count
     
     //Looping

@@ -1,8 +1,8 @@
 /* 
  * File:   main.cpp
  * Author: Cody Steimle
- * Created on October 10, 2016, 9:30 AM
- * Purpose:  A menu without the functions
+ * Created on October 12, 2016, 10:15 AM
+ * Purpose:  A menu without the functions for Assignment 4
  */
 
 //System Libraries Here
@@ -13,6 +13,7 @@ using namespace std;
 
 //Global Constants Only, No Global Variables
 float LTRGAL=2.64179e-1f; //Conversion from liter to gallon
+float GRAVITY=6.673e-8f;  //Universal Gravity Constant cm^3/g/sec^2
 
 //Function Prototypes Here
 
@@ -25,22 +26,22 @@ int main(int argc, char** argv) {
     do{
     
     //Prompt for problem for user input
-    cout<<"1.  Type 1  for Problem A: Savitch_9thEd_Chap4_PracProg1_Gasoline"<<endl;
-    cout<<"2.  Type 2  for Problem B: Savitch_9thEd_Chap4_PracProg2_BetterGasMileage"<<endl;
-    cout<<"3.  Type 3  for Problem C: Savitch_9thEd_Chap4_PracProg3_StockPrice"<<endl;
-    cout<<"4.  Type 4  for Problem D: Savitch_9thEd_Chap4_PracProg4_InflationRate"<<endl;
-    cout<<"5.  Type 5  for Problem E: Savitch_9thEd_Chap4_PracProg5_InflationRatePlus"<<endl;
-    cout<<"6.  Type 6  for Problem F: Savitch_9thEd_Chap4_PracProg6_CreditInterest"<<endl;
-    cout<<"7.  Type 7  for Problem G"<<endl;
-    cout<<"8.  Type 8  for Problem H: Savitch_9thEd_Chap4_ProgProject2_ClothingSize"<<endl;
-    cout<<"9.  Type 9  for Problem I: Savitch_9thEd_Chap4_ProgProject3_ClothingSizePlus"<<endl;
-    cout<<"10. Type 10 for Problem J: Savitch_9thEd_Chap4_ProgProject4_99Bottles"<<endl;
+    cout<<"1.  Type 1  for Problem : Savitch_9thEd_Chap4_PracProg1_Gasoline"<<endl;
+    cout<<"2.  Type 2  for Problem : Savitch_9thEd_Chap4_PracProg2_BetterGasMileage"<<endl;
+    cout<<"3.  Type 3  for Problem : Savitch_9thEd_Chap4_PracProg3_StockPrice"<<endl;
+    cout<<"4.  Type 4  for Problem : Savitch_9thEd_Chap4_PracProg4_InflationRate"<<endl;
+    cout<<"5.  Type 5  for Problem : Savitch_9thEd_Chap4_PracProg5_InflationRatePlus"<<endl;
+    cout<<"6.  Type 6  for Problem : Savitch_9thEd_Chap4_PracProg6_CreditInterest"<<endl;
+    cout<<"7.  Type 7  for Problem : Savitch_9thEd_Chap4_PracProg7_Gravity"<<endl;
+    cout<<"8.  Type 8  for Problem : Savitch_9thEd_Chap4_ProgProject2_ClothingSize"<<endl;
+    cout<<"9.  Type 9  for Problem : Savitch_9thEd_Chap4_ProgProject3_ClothingSizePlus"<<endl;
+    cout<<"10. Type 10 for Problem : Savitch_9thEd_Chap4_ProgProject4_99Bottles"<<endl;
     cin>>menuItm;
     
     //Go to the Problem
         switch(menuItm){
             case 1:{
-                cout<<"Inside Problem A"<<endl;
+                cout<<"Inside Problem : Savitch_9thEd_Chap4_PracProg1_Gasoline"<<endl;
                 //Declare all Variables Here
                 char ans;           //answer for looping
                 int miles, ltrgas;  //Miles traveled, liters of gas
@@ -78,11 +79,12 @@ int main(int argc, char** argv) {
                 //Looping
                 cout<<"Would you like to run the program again?"<<endl;
                 cin>>ans;
-                }while((ans=='y')||(ans=='Y'));            
+                }while((ans=='y')||(ans=='Y')); 
+                cout<<endl;
                 break;
             }
             case 2:{
-                cout<<"Inside Problem B"<<endl;
+                cout<<"Inside Problem : Savitch_9thEd_Chap4_PracProg2_BetterGasMileage"<<endl;
                 //Declare all Variables Here
                 char ans;                          //answer for looping
                 int miles, ltrgas;                 //Miles traveled, liters of gas
@@ -127,10 +129,11 @@ int main(int argc, char** argv) {
                 cout<<"Would you like to run the program again?"<<endl;
                 cin>>ans;
                 }while((ans=='y')||(ans=='Y'));
+                cout<<endl;
                 break;
             }
             case 3:{
-                cout<<"Inside Problem C"<<endl;
+                cout<<"Inside Problem : Savitch_9thEd_Chap4_PracProg3_StockPrice"<<endl;
                 //Declare all Variables Here
                 char ans;                    //answer for looping
                 int numshar, stkpric;        //Number of shares, Stock price
@@ -170,10 +173,11 @@ int main(int argc, char** argv) {
                 cout<<"Would you like to run the program again?"<<endl;
                 cin>>ans;
                 }while((ans=='y')||(ans=='Y'));
+                cout<<endl;
                 break;
             }
             case 4:{
-                cout<<"Inside Problem D"<<endl;
+                cout<<"Inside Problem : Savitch_9thEd_Chap4_PracProg4_InflationRate"<<endl;
                 //Declaration of Variables
                 char ans;                        //answer for looping
                 float pricnow, pricago, infrate; //Price today, Price 1 year ago, Inflation rate
@@ -210,10 +214,11 @@ int main(int argc, char** argv) {
                 cout<<"Would you like to run the program again?"<<endl;
                 cin>>ans;
                 }while((ans=='y')||(ans=='Y'));
+                cout<<endl;
                 break;
             }
             case 5:{
-                cout<<"Inside Problem E"<<endl;
+                cout<<"Inside Problem : Savitch_9thEd_Chap4_PracProg5_InflationRatePlus"<<endl;
                 //Declaration of Variables
                 char ans;                                 //answer for looping
                 float pricnow, pricago, infrate, annicrs; //Price today, Price 1 year ago, Inflation rate, Annual increase
@@ -251,10 +256,11 @@ int main(int argc, char** argv) {
                 cout<<"Would you like to run the program again?"<<endl;
                 cin>>ans;
                 }while((ans=='y')||(ans=='Y'));
+                cout<<endl;
                 break;
             }
             case 6:{
-                cout<<"Inside Problem F"<<endl;
+                cout<<"Inside Problem : Savitch_9thEd_Chap4_PracProg6_CreditInterest"<<endl;
                 //Declaration of Variables
                 char ans;               //answer for looping
                 int months;             //number of months compounded
@@ -291,17 +297,44 @@ int main(int argc, char** argv) {
                 cout<<"Would you like to run the program again?"<<endl;
                 cin>>ans;
                 }while((ans=='y')||(ans=='Y'));
+                cout<<endl;
                 break;
             }
             case 7:{
-                cout<<"Inside Problem G"<<endl;
-                //Input values
+                cout<<"Inside Problem : Savitch_9thEd_Chap4_PracProg7_Gravity"<<endl;
+                //Declaration of Variables
+                char ans;              //Answer for looping
+                float distanc;         //Distance apart
+                float msOne;           //First Mass
+                float msTwo;           //Second Mass
+                float force;           //The force between the two objects
+
+                //Looping
+                do{
+
+                //Conversion of inputs
+                cout<<"Enter the weight of the first object (in dynes):"<<endl;
+                cin>>msOne;
+                cout<<"Enter the weight of the second object(in dynes):"<<endl;     
+                cin>>msTwo;
+                cout<<"Enter the distance between the two objects (in centimeters):"<<endl;
+                cin>>distanc; 
+
                 //Process values -> Map inputs to Outputs
+                force=GRAVITY*msOne*msTwo/(distanc*distanc);
+
                 //Display Output
+                cout<<"The gravitational force between the two object is : "<<force<<" dynes"<<endl;
+
+                //Looping
+                cout<<"Would you like to run the program again?"<<endl;
+                cin>>ans;
+                }while((ans=='y')||(ans=='Y'));
+                cout<<endl;
                 break;
             }
             case 8:{
-                cout<<"Inside Problem H"<<endl;
+                cout<<"Inside Problem : Savitch_9thEd_Chap4_ProgProject2_ClothingSize"<<endl;
                 //Declaration of Variables
                 char ans;                         //answer for looping
                 int age, weight;                  //age in years, weight in pounds 
@@ -348,10 +381,11 @@ int main(int argc, char** argv) {
                 cout<<"Would you like to run the program again?"<<endl;
                 cin>>ans;
                 }while((ans=='y')||(ans=='Y'));
+                cout<<endl;
                 break;
             }
             case 9:{
-                cout<<"Inside Problem I"<<endl;
+                cout<<"Inside Problem : Savitch_9thEd_Chap4_ProgProject3_ClothingSizePlus"<<endl;
                 //Declaration of Variables
                 char ans;                                           //answer for looping
                 int age, weight;                                    //age in years, weight in pounds 
@@ -406,10 +440,11 @@ int main(int argc, char** argv) {
                 cout<<"Would you like to run the program again?"<<endl;
                 cin>>ans;
                 }while((ans=='y')||(ans=='Y'));
+                cout<<endl;
                 break;
             }
             case 10:{
-                cout<<"Inside Problem J"<<endl;
+                cout<<"Inside Problem : Savitch_9thEd_Chap4_ProgProject4_99Bottles"<<endl;
                 //Declaration of Variables
                 char ans;           //answer for looping
                 int bttlcnt;  //bottle count
@@ -442,6 +477,7 @@ int main(int argc, char** argv) {
                 cout<<"Would you like to run the program again?"<<endl;
                 cin>>ans;
                 }while((ans=='y')||(ans=='Y'));
+                cout<<endl;
                 break;
             }        
         }
