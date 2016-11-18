@@ -10,6 +10,7 @@
 #include <cstdlib>    //Random number generator
 #include <ctime>      //Time
 #include <fstream>    //File input and output
+#include <string>     //String Library
 using namespace std;  //Name-space used in the System Library
 
 //User Libraries
@@ -25,6 +26,9 @@ int main(int argc, char** argv) {
     srand(static_cast<unsigned int>(time(0)));
     
     //Declaration of Variables
+    ifstream in;
+    ofstream out;
+    string line;
     char comptr;           //Computer Inputs
     char compCol, compRow; //Computer Attack
     int shipDir;           //Ship direction for random
@@ -521,6 +525,18 @@ int main(int argc, char** argv) {
     if(humHeal=='0')
         cout<<"*****You Lose.*****"<<endl;   
     cout<<endl;        
+    
+    //Results
+    cout<<"Would you like to save the results to a file? (Y/N)"<<endl;
+    cin>>human;
+    switch(human){
+        case 'y':
+        case 'Y': {
+            in.open("score.dat");
+            in>>turn;
+            in.close();                  
+        };break;
+    }
     cout<<"Thanks for playing!"<<endl; 
     
     //Exit Program
