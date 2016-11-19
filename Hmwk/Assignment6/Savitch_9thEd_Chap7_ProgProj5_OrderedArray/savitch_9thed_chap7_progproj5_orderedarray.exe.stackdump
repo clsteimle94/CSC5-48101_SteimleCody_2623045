@@ -1,0 +1,10 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=00401408
+eax=00294000 ebx=000025B4 ecx=000073B0 edx=80000000 esi=61328C13 edi=611E7F32
+ebp=0028CC38 esp=0028CC24 program=C:\Users\Cody\Desktop\SteimleCody_2623045\Hmwk\Assignment6\Savitch_9thEd_Chap7_ProgProj5_OrderedArray\dist\Debug\Cygwin-Windows\savitch_9thed_chap7_progproj5_orderedarray.exe, pid 8960, thread main
+cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
+Stack trace:
+Frame     Function  Args
+0028CC38  00401408 (0028CC50, 612E6100, 00000000, 610284F3)
+0028CC88  0040122A (0000000A, 0028CCAC, 00000001, 61007D35)
+0028CD28  61007D9A (00000000, 0028CD84, 61006DC0, 00000000)
+End of stack trace
